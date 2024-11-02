@@ -1,0 +1,41 @@
+@media (any-pointer:none), (any-pointer:coarse) {
+	@media screen and (orientation:portrait) {
+		HEADER { display: none; }
+		:root {
+			--font-h1: 500 18px var(--ff);
+			--font-h2: 500 16px var(--ff);
+			--font-p: 400 14px var(--ff);
+		}
+		@scope (.icons-wrapper) {
+			:scope {
+				flex-direction: column;
+			}
+			IMG {
+				--size-icon: 40px;
+				flex: 0 0;
+				height: var(--size-icon);
+			}
+			FIGURE {
+				flex-direction: row;
+			}
+			FIGCAPTION {
+				flex: 1 1;
+				text-align: start;
+			}
+		}
+		@scope (.timeline) {
+			:scope:before {
+				height: 100%;
+				width: 0.2em;
+
+				top: 0;
+				left: calc(-1* var(--size-timepoint) - 0.1em);
+				bottom: 0;
+			}
+			.point:before {
+				left: calc(var(--size-timepoint) * -1.5);
+				top: 0;
+			}
+		}
+	}
+}

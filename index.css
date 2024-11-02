@@ -3,7 +3,8 @@
 @import url('./styles/navigation.css');
 @import url('./styles/icons.css');
 
-@import url('./styles/mobile.layout.css');
+@import url('./styles/layouts/mobile.css');
+@import url('./styles/layouts/1440.css');
 
 :root {
 	box-sizing: border-box;
