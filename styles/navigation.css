@@ -1,0 +1,38 @@
+:root {
+	scroll-behavior: smooth;
+}
+
+@scope (.arrow-up) {
+	:scope {
+		position: fixed;
+		left: 1rem; bottom: 1rem;
+		z-index: 100;
+	}
+	IMG {
+		width: var(--size-up); aspect-ratio: 1;
+		background: rgb(255 255 255 / 0.1);
+		border-radius: 50%;
+		padding: calc(var(--size-up) / 2);
+	}
+}
+
+A[href] { color: oklch(0.96 0.1 30); }
+A[name] { position: absolute; top: 0; }
+
+@scope (NAV) {
+	:scope {
+		position: fixed;
+		top: 0; left: 0; right: 0;
+		display: flex;
+		padding: 1rem 4rem;
+		gap: 1rem;
+		z-index: 100;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		background: rgb(0 0 0 / 0.4);
+	}
+	A {
+		display: block;
+		text-decoration: none;
+	}
+}

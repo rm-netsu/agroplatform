@@ -1,0 +1,82 @@
+@scope (.icons-wrapper) {
+	:scope {
+		display: flex;
+		flex-direction: row;
+		max-width: var(--max-width-icons);
+		gap: 1rem;
+		position: relative;
+	}
+
+	FIGURE {
+		flex: 1 1;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 0.5rem;
+	}
+
+	IMG {
+		width: var(--size-icon);
+		aspect-ratio: 1;
+	}
+
+	FIGCAPTION {
+		font: var(--font-icon-label);
+		text-align: center;
+	}
+}
+
+@scope (.timeline) {
+	.point { position: relative; }
+	.point:before {
+		content: ' ';
+		display: block;
+		width: var(--size-timepoint);
+		aspect-ratio: 1;
+		background: var(--text-color);
+		border-radius: 50%;
+		position: absolute;
+		left: calc(50% - (var(--size-timepoint) / 2));
+		top: calc(var(--size-timepoint) * -1.5);
+	}
+	:scope:before {
+		content: ' ';
+		display: block;
+		width: 100%;
+		height: 0.2em;
+		background: var(--text-color);
+		position: absolute;
+		top: calc(-1 * var(--size-timepoint) - 0.1em); left: 0; right: 0;
+	}
+}
+
+@scope (:has(> .qr-img)) {
+	:scope {
+		
+	}
+}
+.qr-img {
+	width: 200px;
+	height: 200px;
+	aspect-ratio: 1;
+	background: var(--text-color);
+	border-radius: 10%;
+	padding: 10%;
+}
+
+@scope (.product) {
+	:scope {
+		display: flex;
+		flex-direction: row;
+		max-width: 100%;
+		gap: 1rem;
+		padding: 0 2rem;
+		align-items: center;
+	}
+	:scope.swap {
+		flex-direction: row-reverse;
+	}
+	IMG {
+		max-width: 36vw;
+	}
+}

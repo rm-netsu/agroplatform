@@ -1,0 +1,24 @@
+:root {
+	--ff: Roboto, sans-serif;
+	--h1-sz: 32px;
+	--h2-sz: 18px;
+	--text-color: oklch(0.96 0.01 120);
+
+	--font-h1: small-caps 500 32px var(--ff);
+	--font-h2: small-caps 500 18px var(--ff);
+	--font-p: 400 16px var(--ff);
+	--font-li: 400 16px var(--ff);
+	--font-list-header: small-caps 400 18px var(--ff);
+	--font-icon-label: 400 14px var(--ff);
+
+	--size-icon: 80px;
+	--size-timepoint: 16px;
+	--size-up: 2rem;
+
+	--max-width-h1: 1080px;
+	--max-width-h2: 800px;
+	--max-width-p: 800px;
+	--max-width-icons: 640px;
+
+	font: 400 18px var(--ff);
+}

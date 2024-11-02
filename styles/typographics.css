@@ -1,0 +1,33 @@
+H1, H2 { line-height: 1.2em; }
+H1 {
+	font: var(--font-h1);
+	max-width: var(--max-width-h1);
+	text-align: center;
+	padding: 0 2rem;
+}
+H2 {
+	font: var(--font-h2);
+	max-width: var(--max-width-h2);
+}
+P { max-width: var(--max-width-p); }
+
+@scope (.para) {
+	:scope {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+	P { font: var(--font-p); }
+}
+
+@scope (.list-wrapper) {
+	:scope {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		align-self: flex-start;
+	}
+	
+	.header { font: var(--font-list-header); }
+	LI { font: var(--font-li); }
+}
