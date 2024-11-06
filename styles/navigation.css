@@ -2,6 +2,9 @@
 	scroll-behavior: smooth;
 }
 
+HTML, BODY { scroll-snap-type: y mandatory; }
+BODY > SECTION { scroll-snap-align: start; }
+
 @scope (.arrow-up) {
 	:scope {
 		position: fixed;
