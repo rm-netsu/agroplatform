@@ -1,7 +1,7 @@
 :root {
 	scroll-behavior: smooth;
 }
-#toggle-menu, LABEL[for=toggle-menu] { display: none; }
+#toggle-menu, #menu-icon { display: none; }
 
 HTML, BODY { scroll-snap-type: y mandatory; }
 BODY > SECTION { scroll-snap-align: start; }

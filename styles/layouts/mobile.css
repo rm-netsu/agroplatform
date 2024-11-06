@@ -41,9 +41,9 @@
 		}
 
 		/* navigation */
-		LABEL[for=toggle-menu] { display: block; }
-		LABEL[for=toggle-menu] IMG { width: 1.5rem; padding: 0.5rem; aspect-ratio: 1; }
-		HEADER:not(:has(#toggle-menu:checked)) > NAV {
+		#menu-icon { display: block; }
+		#menu-icon IMG { width: 1.5rem; padding: 0.5rem; aspect-ratio: 1; }
+		HEADER:not(:has(#toggle-menu:checked)) NAV {
 			display: none !important;
 		}
 		HEADER:has(#toggle-menu:checked) {
@@ -55,6 +55,11 @@
 			:scope {
 				display: flex;
 				flex-direction: column;
+			}
+			.dropdown:after { display: none !important; }
+			.dropdown-items {
+				display: block !important;
+				position: relative !important;
 			}
 		}
 	}

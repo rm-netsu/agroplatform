@@ -19,8 +19,8 @@
 	<!-- Шапка ************************************************************* -->
 	<header>
 		<input type='checkbox' id='toggle-menu' />
-		<label for='toggle-menu'><img src='./icons/menu.svg' /></label>
-		<nav>
+		<label for='toggle-menu' id='menu-icon'><img src='./icons/menu.svg' /></label>
+		<nav onclick='window["toggle-menu"].click()'>
 			<a href='#about'>О проекте</a>
 			<div class='dropdown'>
 				<a href='#products'>Технология и Продукты</a>
