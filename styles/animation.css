@@ -1,0 +1,15 @@
+@keyframes ani {
+	0% { opacity: 0; transform: translateY(1rem); }
+	100% { opacity: 1; }
+}
+
+@scope (SECTION :not(.bg)) {
+	:scope {
+		opacity: 0;
+		animation: ani 1.2s forwards;
+		animation-delay: 0.3s;
+	}
+	:scope:is(H1) { animation-delay: 0.1s; }
+	:scope:is(H2) { animation-delay: 0.2s; }
+	:scope:is(.icons-wrapper IMG) { animation-delay: 0.4s; }
+}

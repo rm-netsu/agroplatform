@@ -2,6 +2,7 @@
 @import url('./styles/typographics.css');
 @import url('./styles/navigation.css');
 @import url('./styles/icons.css');
+@import url('./styles/animation.css');
 
 @import url('./styles/layouts/mobile.css');
 @import url('./styles/layouts/1440.css');
@@ -53,10 +54,4 @@ SECTION .bg {
 	overflow: hidden;
 	z-index: -100;
 	opacity: 0.32;
-}
-
-@scope(SECTION.title) {
-	.list-wrapper {
-		
-	}
 }
