@@ -1,6 +1,5 @@
 @media (any-pointer:none), (any-pointer:coarse) {
 	@media screen and (orientation:portrait) {
-		HEADER { display: none; }
 		:root {
 			--font-h1: 500 18px var(--ff);
 			--font-h2: 500 16px var(--ff);
@@ -35,6 +34,24 @@
 			.point:before {
 				left: calc(var(--size-timepoint) * -1.5);
 				top: 0;
+			}
+		}
+
+		/* navigation */
+		LABEL[for=toggle-menu] { display: block; }
+		LABEL[for=toggle-menu] IMG { width: 1.5rem; padding: 0.5rem; aspect-ratio: 1; }
+		HEADER:not(:has(#toggle-menu:checked)) > NAV {
+			display: none !important;
+		}
+		HEADER:has(#toggle-menu:checked) {
+			background-color: rgb(0 0 0 / 0.8);
+			width: 100vw;
+			height: 100vh;
+		}
+		@scope (NAV) {
+			:scope {
+				display: flex;
+				flex-direction: column;
 			}
 		}
 	}

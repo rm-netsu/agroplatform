@@ -1,6 +1,7 @@
 :root {
 	scroll-behavior: smooth;
 }
+#toggle-menu, LABEL[for=toggle-menu] { display: none; }
 
 HTML, BODY { scroll-snap-type: y mandatory; }
 BODY > SECTION { scroll-snap-align: start; }
@@ -22,16 +23,18 @@ BODY > SECTION { scroll-snap-align: start; }
 A[href] { color: oklch(0.96 0.1 30); }
 A[name] { position: absolute; top: 0; }
 
-@scope (NAV) {
+@scope (HEADER) {
 	:scope {
 		position: fixed;
 		top: 0; left: 0; right: 0;
+		z-index: 100;
+		background: rgb(0 0 0 / 0.4);
+	}
+	NAV {
 		display: flex;
 		padding: 0 2rem;
-		z-index: 100;
 		flex-wrap: wrap;
 		justify-content: space-around;
-		background: rgb(0 0 0 / 0.4);
 	}
 	A {
 		display: block;
