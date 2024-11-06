@@ -42,6 +42,14 @@ A[name] { position: absolute; top: 0; }
 		position: relative;
 		display: inline-block;
 	}
+	:scope:after {
+		content: url(./chevron-right.svg);
+		position: absolute;
+		top: 50%; left: 100%;
+		width: 1em;
+		aspect-ratio: 1;
+		transform: translate(-80%, -44%);
+	}
 	.dropdown-items {
 		display: none;
 		position: absolute;
