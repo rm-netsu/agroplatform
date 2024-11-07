@@ -17,7 +17,7 @@ P { max-width: var(--max-width-p); }
 		flex-direction: column;
 		gap: 0.5rem;
 	}
-	P { font: var(--font-p); }
+	P { font: var(--font-p); font-weight: 300; }
 }
 
 @scope (.list-wrapper) {
@@ -30,4 +30,22 @@ P { max-width: var(--max-width-p); }
 	
 	.header { font: var(--font-list-header); }
 	LI { font: var(--font-li); }
+}
+
+@scope (.product) {
+	LI:first-child { margin-top: 0.5rem; }
+	LI:last-child { margin-bottom: 1.25rem; }
+	LI:not(:last-child) { margin-bottom: 0.5rem; }
+
+	I { display: block; font-weight: 300; margin-top: 0.25rem; }
+}
+
+@scope (SECTION.title) {
+	A[href] {
+		background: oklch(0.96 0.1 30);
+		border-radius: 1.5rem;
+		padding: 0.5rem 2rem;
+		color: black;
+		text-decoration: none;
+	}
 }
