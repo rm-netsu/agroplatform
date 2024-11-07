@@ -28,19 +28,26 @@ A[name] { position: absolute; top: 0; }
 		position: fixed;
 		top: 0; left: 0; right: 0;
 		z-index: 100;
-		background: rgb(0 0 0 / 0.4);
+		background: var(--color-navheader);
 	}
 	NAV {
 		display: flex;
 		padding: 0 2rem;
 		flex-wrap: wrap;
-		justify-content: space-around;
+		justify-content: space-evenly;
+		max-width: var(--max-width-nav);
+		margin: auto;
+		gap: 1rem;
 	}
 	A {
 		display: block;
 		text-decoration: none;
 		padding: 1rem;
 	}
+	A:hover {
+		text-decoration: underline;
+	}
+	.filler { flex: 1 1; }
 }
 
 @scope (.dropdown) {
@@ -61,7 +68,7 @@ A[name] { position: absolute; top: 0; }
 		position: absolute;
 		
 		left: 0; top: 100%;
-		background-color: rgb(0 0 0 / 0.4);
+		background-color: var(--color-navheader);
 		width: max-content;
 		z-index: 1;
 	}

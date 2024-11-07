@@ -19,6 +19,10 @@
 	--max-width-h2: 800px;
 	--max-width-p: 800px;
 	--max-width-icons: 640px;
+	--max-width-nav: 800px;
+
+	--color-navheader: rgb(0 0 0 / 0.6);
+	--color-navheader-dense: rgb(0 0 0 / 0.8);
 
 	font: 400 18px var(--ff);
 }

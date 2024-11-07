@@ -21,16 +21,21 @@
 		<input type='checkbox' id='toggle-menu' />
 		<label for='toggle-menu' id='menu-icon'><img src='./icons/menu.svg' /></label>
 		<nav onclick='window["toggle-menu"].click()'>
-			<a href='#about'>О проекте</a>
+			<div class='dropdown'>
+				<a href='#about'>О проекте</a>
+				<div class='dropdown-items'>
+					<a href='#blog'>Новости и Блог</a>
+					<a href='#qa'>Вопросы и Ответы</a>
+				</div>
+			</div>
 			<div class='dropdown'>
 				<a href='#products'>Технология и Продукты</a>
 				<div class='dropdown-items'>
 					<a href='#industry'>Решения для Промышленности</a>
+					<a href='#researches'>Научные Исследования и Разработки</a>
 				</div>
 			</div>
-			<a href='#researches'>Научные Исследования и Разработки</a>
-			<a href='#blog'>Новости и Блог</a>
-			<a href='#qa'>Вопросы и Ответы</a>
+			<div class='filler'></div>
 			<a href='#contacts'>Контакты</a>
 		</nav>
 	</header>

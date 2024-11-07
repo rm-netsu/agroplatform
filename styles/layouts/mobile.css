@@ -47,7 +47,7 @@
 			display: none !important;
 		}
 		HEADER:has(#toggle-menu:checked) {
-			background-color: rgb(0 0 0 / 0.8);
+			background-color: var(--color-navheader-dense);
 			width: 100vw;
 			height: 100vh;
 		}
