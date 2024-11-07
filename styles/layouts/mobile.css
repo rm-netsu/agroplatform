@@ -62,5 +62,18 @@
 				position: relative !important;
 			}
 		}
+
+		.qa { font-size: 16px !important; }
+
+		@scope (.product) {
+			.list-wrapper LI {
+				font-size: 14px !important;
+				margin-bottom: 0.2rem;
+				margin-left: 1em;
+			}
+			.list-wrapper LI I {
+				font-size: 12px !important;
+			}
+		}
 	}
 }

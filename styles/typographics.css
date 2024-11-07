@@ -63,7 +63,6 @@ P { max-width: var(--max-width-p); }
 		flex-direction: column;
 		width: 100%;
 		max-width: 560px;
-		font-size: 16px;
 		gap: 0.2em;
 		--r: 1em;
 	}
