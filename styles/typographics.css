@@ -47,6 +47,8 @@ P { max-width: var(--max-width-p); }
 		padding: 0.5rem 2rem;
 		color: black !important;
 		text-decoration: none;
+		display: block;
+		text-align: center;
 	}
 	:scope:hover {
 		color: oklch(0.96 0.1 30) !important;
